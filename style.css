@@ -9,7 +9,7 @@
     scroll-behavior: smooth;
 }
 
-.main-hero-text h1 span::before {
+/* .main-hero-text h1 span::before {
     color: #2C6E49;
     font-size: 70px;
     content: 'AI';
@@ -26,7 +26,20 @@
         content: 'Coding';
         color: #409364;
     }
+} */
+
+
+.cover-body{
+    background-color: #2C6E49;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
+
 
 .whatsap {
     color: white;
@@ -1025,6 +1038,17 @@ a {
     width: 25px;
     background:linear-gradient(349deg, #ff000090 0%,white 100%); ;
     border-radius: 300px;
+    animation: blink 1s ease-in infinite;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
 
 .outer-square{
@@ -1188,6 +1212,28 @@ a {
 }
 
 
+@media screen and (max-width: 395px) {
+    .header-section{
+        flex-direction: column;
+        display: block;
+        /* background-color: red; */
+        margin-top: 0;
+        border-radius: 0;
+    }
+}
+@media screen and (max-width: 375px) {
+    .right-header-box button a{
+        font-size: 14.5px;
+        /* background-color: red; */
+    }
+}
+@media screen and (max-width: 320px) {
+    .right-header-box button a{
+        font-size: 14.5px;
+        /* background-color: red; */
+    }
+}
+
 
 
 @media screen and (max-width: 1120px) {
@@ -1203,17 +1249,17 @@ a {
     }
 
     .right-header-box button {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .right-header-box button a::before {
         position: relative;
-        content: 'Join In';
+        content: 'Get App';
     }
 
     .s button a::before {
         position: relative;
-        content: 'Join Our Telegram';
+        content: 'Subscribe';
 
     }
 
