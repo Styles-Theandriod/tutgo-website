@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&amp;family=Poppins:wght@600&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 * {
     margin: 0;
@@ -29,8 +30,16 @@
 } */
 
 
+.logo{
+    color: #034B11;
+    font-family: "Sora", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+
 .cover-body{
-    background-color: #2C6E49;
+    background-color: #034B11;
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -43,7 +52,7 @@
 
 .whatsap {
     color: white;
-    background-color: #2C6E49;
+    background-color: #034B11;
     padding: 10px;
     border-radius: 20px;
     position: fixed;
@@ -62,7 +71,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid green;
+    border: 1px solid #034B11;
     border-radius: 100px;
     margin-top: 20px;
     /* background-color: red;    */
@@ -76,7 +85,7 @@
 }
 
 .link-items a {
-    color: green;
+    color: #034B11;
     margin-left: 20px;
     font-weight: bolder;
 }
@@ -164,8 +173,8 @@ a {
 .main-hero-text h1 {
     font-size: 3.125rem;
     /* font-family: 'Poppins', sans-serif; */
-    line-height: 130%;
-    color: #2C6E49;
+    line-height: 100%;
+    color: #034B11;
     font-weight: 700;
     font-family: "Sora", sans-serif;
     /* letter-spacing: -1px; */
@@ -979,7 +988,7 @@ a {
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: stretch;
     row-gap: 1rem;
     column-gap: 1rem;
@@ -1267,10 +1276,12 @@ a {
         margin-top: 20px;
     }
 
-    .logo-box img {
+    .logo-box img{
         width: 80%;
         height: auto;
     }
+
+    
 
     .link-items {
         display: none;
