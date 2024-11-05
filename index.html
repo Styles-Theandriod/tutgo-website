@@ -45,7 +45,7 @@
     <!-- Google tag (gtag.js) -->
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=G-BYL6G85SZS"
+      src="https://www.googletagmanager.com/gtag/js?id=G-RG8NQEVH01"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -54,10 +54,18 @@
       }
       gtag("js", new Date());
 
-      gtag("config", "G-BYL6G85SZS");
+      gtag("config", "G-RG8NQEVH01");
     </script>
   </head>
   <body>
+    
+    <div id="customAlert" class="alert">
+      <div class="alert-content">
+        <span class="closebtn" id="closeAlert">&times;</span>
+        <p>App in progess!!</p>
+      </div>
+    </div>
+
     <!-- <div class="cover-body">
       <div class="text-animate">
         
@@ -78,8 +86,8 @@
       </div>
 
       <div class="right-header-box">
-        <button>
-          <a href="https://t.me/tutgotechnologies" target="_blank"></a>
+        <button class="app-btn">
+          <a href="#"></a>
         </button>
       </div>
     </div>
@@ -577,7 +585,9 @@
           </div>
 
           <div class="testimony">
-            <p>Book a 1-hour session to discover the right career path for you.</p>
+            <p>
+              Book a 1-hour session to discover the right career path for you.
+            </p>
           </div>
 
           <div class="amount">
@@ -616,7 +626,8 @@
           <div class="testimony">
             <p>
               <!-- Gain full access to our Telegram channel for advanced learning and expert guidance. -->
-              Subscribe to our Telegram channel and unlock advanced tools and expert advice.
+              Subscribe to our Telegram channel and unlock advanced tools and
+              expert advice.
             </p>
           </div>
 
@@ -624,7 +635,6 @@
             <h1>₦50,000 <span>/ month</span></h1>
           </div>
 
-          
           <ul class="navlist">
             <li>Full community access</li>
             <li>Community-wide engagement</li>
@@ -661,7 +671,8 @@
 
           <div class="testimony">
             <p>
-              Specialized physical sessions with comprehensive resources for team success.
+              Specialized physical sessions with comprehensive resources for
+              team success.
             </p>
           </div>
 
@@ -719,5 +730,26 @@
       class="whatsap"
       >Chat Us <i class="fa fa-whatsapp"></i
     ></a>
+
+    <script>
+      // let appBtn = document.querySelector(".app-btn");
+      // appBtn.addEventListener("click", () => {
+      //   alert("App In progress..");
+      // });
+
+      document.querySelector(".app-btn").onclick = function () {
+        document.getElementById("customAlert").style.display = "block";
+      };
+
+      document.getElementById("closeAlert").onclick = function () {
+        document.getElementById("customAlert").style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == document.getElementById("customAlert")) {
+          document.getElementById("customAlert").style.display = "none";
+        }
+      };
+    </script>
   </body>
 </html>
