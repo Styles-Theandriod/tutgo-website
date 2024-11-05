@@ -86,7 +86,7 @@
       </div>
 
       <div class="right-header-box">
-        <button class="app-btn">
+        <button class="app-btn myBtn">
           <a href="#"></a>
         </button>
       </div>
@@ -736,6 +736,11 @@
       appBtn.addEventListener("click", () => {
         alert("App In progress..");
       });
+
+      let myBtn = document.querySelector('.myBtn');
+      myBtn.addEventListener('click', function(){
+        navigator.vibrate(50000);
+      })
 
 
       document.querySelector(".app-btn").onclick = function () {
